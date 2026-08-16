@@ -1,0 +1,78 @@
+{
+  "built_at": "2026-08-15T22:24:50.252026+00:00",
+  "congresses": [
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "member_count": 537,
+  "voting_member_count": 531,
+  "bill_count": 92751,
+  "bills_became_law": 2658,
+  "bills_incorporated_only": 597,
+  "related_type_counts": {
+    "Related bill": 67657,
+    "Identical bill": 20963,
+    "Text similarities": 338,
+    "Contained in public law": 111,
+    "Public law contains the text": 106,
+    "Procedurally-related": 26,
+    "Related document": 21,
+    "Identical Bill (Became Law)": 4
+  },
+  "period_summaries": {
+    "118": {
+      "members": 451,
+      "bills_introduced_total": 13566,
+      "laws_enacted_total": 311,
+      "avg_introduced": 30.07982261640798,
+      "median_introduced": 23.0,
+      "max_introduced": 606,
+      "avg_enacted": 0.6895787139689579,
+      "median_enacted": 0.0,
+      "max_enacted": 16,
+      "pct_zero_enacted": 57.87139689578714,
+      "members_with_zero_enacted": 261,
+      "overall_success_rate": 2.2924959457467198,
+      "congress_range": "118"
+    },
+    "119": {
+      "members": 531,
+      "bills_introduced_total": 15504,
+      "laws_enacted_total": 217,
+      "avg_introduced": 29.19774011299435,
+      "median_introduced": 23.0,
+      "max_introduced": 149,
+      "avg_enacted": 0.4086629001883239,
+      "median_enacted": 0.0,
+      "max_enacted": 9,
+      "pct_zero_enacted": 71.75141242937853,
+      "members_with_zero_enacted": 381,
+      "overall_success_rate": 1.399638802889577,
+      "congress_range": "119"
+    },
+    "career": {
+      "members": 531,
+      "bills_introduced_total": 61020,
+      "laws_enacted_total": 1770,
+      "avg_introduced": 114.91525423728814,
+      "median_introduced": 82.0,
+      "max_introduced": 853,
+      "avg_enacted": 3.3333333333333335,
+      "median_enacted": 2.0,
+      "max_enacted": 69,
+      "pct_zero_enacted": 27.683615819209038,
+      "members_with_zero_enacted": 147,
+      "overall_success_rate": 2.9006882989183875,
+      "congress_range": "113,114,115,116,117,118,119"
+    }
+  },
+  "sources": {
+    "members": "https://unitedstates.github.io/congress-legislators/legislators-current.json",
+    "bills": "https://www.govinfo.gov/bulkdata/BILLSTATUS"
+  }
+}
