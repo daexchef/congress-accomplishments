@@ -7,7 +7,10 @@ measures **became law** — including cases where Congressional Research Service
 
 Primary view is the completed **118th Congress (2023–2025)**. Switch to the
 **119th Congress so far** or to **career totals** for the Congresses you have
-downloaded (this repo was built with the 113th–119th, 2013–present).
+downloaded. The GPO Bill Status bulk feed begins with the **108th Congress**;
+career mode therefore covers **108th–119th (2003–present)** so that long-serving
+members (e.g. Pelosi, Waters) receive complete primary-sponsorship counts for
+the available modern era.
 
 No API key is required.
 
@@ -21,7 +24,7 @@ You need [Python 3.11+](https://www.python.org/downloads/).
 git clone https://github.com/daexchef/congress-accomplishments.git
 cd congress-accomplishments
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+.\ .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
@@ -65,7 +68,7 @@ Re-run whenever you want newer 119th numbers. ZIPs are cached under
 # Default: 118th + 119th only (~50 MB)
 python scripts/build_dataset.py
 
-# 113th–119th so career totals cover 2013–present (~300 MB)
+# 108th–119th so career totals cover 2003–present (GPO bulk start; ~500–700 MB)
 python scripts/build_dataset.py --career
 
 # Specific Congresses, re-download
@@ -127,8 +130,10 @@ transparent CRS-based fallback. Audit it in `data/processed/bills.csv`
 - Naming post offices and commemorative measures inflate introduction counts.
 - Leadership and chairs often fold ideas into must-pass vehicles; standalone
   sponsorship understates that work.
-- Career totals only include Congresses you downloaded. Members who began
-  before the earliest ZIP are truncated.
+- Career totals only include Congresses you downloaded. GPO Bill Status bulk
+  data begins at the 108th Congress (2003). Members whose primary-sponsored
+  laws pre-date 2003 (rare for current members) will still show truncated
+  counts unless you supplement with other sources.
 - The 119th Congress is still in session; its counts will change.
 - Vacancies and mid-session special elections follow the current
   congress-legislators snapshot.
