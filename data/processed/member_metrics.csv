@@ -1,1 +1,2 @@
-PLACEHOLDER
+bioguide_id,full_name,chamber,party,state,district,seat,member_type,voting_member,first_term_start,seniority_years,govtrack_id,served_108,served_109,served_110,served_111,served_112,served_113,served_114,served_115,served_116,served_117,served_118,served_119,bills_introduced,laws_enacted,laws_via_related,laws_enacted_including,enactment_rate,standalone_rate,period,period_label,congresses_included
+M001212,Barry Moore,House,Republican,AL,1,AL-1,Representative,True,2021-01-03,4.0,456800,False,False,False,False,False,False,False,False,False,True,True,True,17,1,0,1,0.058823529411764705,0.058823529411764705,118,118th Congress (2023–2025),118
