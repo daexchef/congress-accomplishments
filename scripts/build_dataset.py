@@ -2,8 +2,9 @@
 
 Examples:
     python scripts/build_dataset.py
-    python scripts/build_dataset.py --career
+    python scripts/build_dataset.py --career          # 108–119 (2003–present)
     python scripts/build_dataset.py --congresses 118 119
+    python scripts/build_dataset.py --congresses 108 109 110 111 112 113 114 115 116 117 118 119
     python scripts/build_dataset.py --force
 """
 
@@ -41,7 +42,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--career",
         action="store_true",
-        help="Download 113th–119th Congresses so career totals cover 2013–present.",
+        help="Download 108th–119th Congresses so career totals cover 2003–present (GPO bulk availability).",
     )
     p.add_argument(
         "--force",
