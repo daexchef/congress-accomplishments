@@ -68,7 +68,14 @@ INCORPORATION_PHRASES = (
     "provisions were included in",
 )
 
+# GPO Bill Status bulk XML is available starting with the 108th Congress.
+# Earlier Congresses require other sources (Congress.gov API or historical scrapes).
 CONGRESS_RANGES = {
+    108: ("2003-01-07", "2005-01-03"),
+    109: ("2005-01-04", "2007-01-03"),
+    110: ("2007-01-04", "2009-01-03"),
+    111: ("2009-01-06", "2011-01-03"),
+    112: ("2011-01-05", "2013-01-03"),
     113: ("2013-01-03", "2015-01-03"),
     114: ("2015-01-06", "2017-01-03"),
     115: ("2017-01-03", "2019-01-03"),
@@ -79,7 +86,8 @@ CONGRESS_RANGES = {
 }
 
 DEFAULT_CONGRESSES = (118, 119)
-CAREER_CONGRESSES = (113, 114, 115, 116, 117, 118, 119)
+# Full GPO-available range so career totals cover 2003–present for long-serving members.
+CAREER_CONGRESSES = tuple(range(108, 120))  # 108 … 119
 
 PERIODS = {
     "118": {
@@ -95,7 +103,7 @@ PERIODS = {
         "require_service": 119,
     },
     "career": {
-        "label": "Career totals (downloaded Congresses)",
+        "label": "Career totals (108th–119th / 2003–present)",
         "congresses": None,  # all bills on disk
         "as_of": None,
         "require_service": None,
