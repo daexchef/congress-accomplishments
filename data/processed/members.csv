@@ -1,1 +1,3 @@
-PLACEHOLDER
+bioguide_id,full_name,chamber,party,state,district,seat,member_type,voting_member,first_term_start,seniority_years,govtrack_id,served_108,served_109,served_110,served_111,served_112,served_113,served_114,served_115,served_116,served_117,served_118,served_119
+B001323,Nicholas J. Begich III,House,Republican,AK,At-Large,AK-AL,Representative,True,2025-01-03,0.6,456946,False,False,False,False,False,False,False,False,False,False,False,True
+P000197,Nancy Pelosi,House,Democratic,CA,11,CA-11,Representative,True,1987-06-02,39.6,400314,True,True,True,True,True,True,True,True,True,True,True,True
